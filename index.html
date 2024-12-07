@@ -4,111 +4,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prakhar Diwan - Portfolio</title>
+    <title>Prakhar Diwan | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header id="home">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
         <div class="container">
-            <h1>Prakhar Diwan</h1>
-            <p>Digital Design Engineer | Semiconductor Enthusiast | Problem Solver</p>
+            <a href="#home" class="logo">Prakhar Diwan</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm <span>Prakhar Diwan</span></h1>
+            <p>Digital Design Engineer | Semiconductor Enthusiast</p>
             <a href="#contact" class="btn">Get in Touch</a>
         </div>
-    </header>
+    </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I am a Digital Design Engineer with a strong academic foundation from IIT Bombay, specializing in Microelectronics and VLSI. My passion lies in tackling complex problems in RTL design, hardware optimization, and semiconductor technologies.</p>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>IIT Bombay:</strong> Dual Degree (B.Tech + M.Tech) in Electrical Engineering (9.61 CPI)</li>
-                <li><strong>Campion School, Bhopal:</strong> 91% (2018, CBSE)</li>
-                <li><strong>Narayana Vidyalayam, Nagpur:</strong> 97.6% (2016, CBSE)</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements">
-        <div class="container">
-            <h2>Achievements</h2>
-            <ul>
-                <li>Institute Academic Prize (Top 2 students in the Electrical Engineering department)</li>
-                <li>DAAD-WISE Scholarship for research in Germany</li>
-                <li>Mitacs Globalink Internship at École Polytechnique de Montréal</li>
-                <li>Ranked 4th among 78 Dual Degree students in IIT Bombay</li>
-            </ul>
+            <div class="about-content">
+                <img src="images/profile.jpg" alt="Prakhar Diwan">
+                <div>
+                    <h2>About Me</h2>
+                    <p>I am a Digital Design Engineer with a passion for solving complex problems in RTL design, hardware optimization, and semiconductor technologies. I graduated from IIT Bombay with a specialization in Microelectronics and VLSI.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience">
+    <section id="experience" class="experience">
         <div class="container">
-            <h2>Professional Experience</h2>
-            <div class="experience">
-                <h3>Digital Design Engineer</h3>
-                <p><strong>Texas Instruments, Bangalore</strong> (Aug 2023 - Present)</p>
-                <p>Modeled and analyzed a 2-stage pipelined ADC in Python, addressing flash offset and DAC mismatch errors.</p>
-            </div>
-            <div class="experience">
-                <h3>Research Internship</h3>
-                <p><strong>University of Tübingen, Germany</strong> (May 2021 - Aug 2021)</p>
-                <p>Developed a Huffman encoder for 1D CNN weights, achieving a 16.25% reduction in power consumption.</p>
+            <h2>Experience</h2>
+            <div class="experience-grid">
+                <div class="card">
+                    <h3>Texas Instruments</h3>
+                    <p>Digital Design Engineer (2023 - Present)</p>
+                    <p>Worked on high-speed data converters, modeled 2-stage pipelined ADCs, and analyzed error effects in Python.</p>
+                </div>
+                <div class="card">
+                    <h3>University of Tübingen</h3>
+                    <p>Research Intern (2021)</p>
+                    <p>Developed a Huffman encoder for CNN accelerators, reducing power consumption by 16.25%.</p>
+                </div>
+                <div class="card">
+                    <h3>IIT Bombay</h3>
+                    <p>Master’s Thesis (2022-2023)</p>
+                    <p>Researched heterogeneous ISA architectures and reduced Energy Delay Product by 50%.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="projects">
         <div class="container">
             <h2>Projects</h2>
             <div class="project-grid">
-                <div class="project">
+                <div class="project-card">
                     <h3>Pipelined IITB-RISC Processor</h3>
-                    <p>Designed a 5-stage pipelined RISC processor using VHDL with data forwarding and hazard mitigation.</p>
+                    <p>Designed a 5-stage pipelined processor with custom ISA and hazard mitigation using VHDL.</p>
                 </div>
-                <div class="project">
+                <div class="project-card">
                     <h3>Neural Networks on FPGA</h3>
-                    <p>Trained a neural network for CIFAR-10 classification and automated its VHDL model generation.</p>
+                    <p>Trained a neural network and automated synthesizable VHDL generation for hardware deployment.</p>
                 </div>
-                <div class="project">
-                    <h3>System-level Design of PLL</h3>
-                    <p>Implemented a 5 Gbps Hogge phase detector and an integer-16 PLL in VerilogA.</p>
+                <div class="project-card">
+                    <h3>PLL & Phase Detectors</h3>
+                    <p>Designed a 5 Gbps phase detector and an integer-16 PLL using VerilogA.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="skills">
         <div class="container">
             <h2>Skills</h2>
-            <ul>
-                <li>Programming: C++, Python, MATLAB, Verilog, SystemVerilog</li>
-                <li>Tools: ModelSim, Keil µVision, Intel Quartus</li>
-                <li>Interests: Computer Architecture, Digital VLSI, Machine Learning</li>
-            </ul>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Programming</h3>
+                    <p>C++, Python, SystemVerilog</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-solid fa-cogs"></i>
+                    <h3>Tools</h3>
+                    <p>ModelSim, Keil µVision, Quartus</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-solid fa-laptop"></i>
+                    <h3>Specialization</h3>
+                    <p>Computer Architecture, Digital VLSI Design</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:prakhardiwan@gmail.com">prakhardiwan@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/prakhardiwan" target="_blank">github.com/prakhardiwan</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/prakhardiwan" target="_blank">linkedin.com/in/prakhardiwan</a></p>
+            <p>Feel free to reach out to me via email or check out my GitHub and LinkedIn profiles.</p>
+            <div class="contact-links">
+                <a href="mailto:prakhardiwan@gmail.com" class="btn">Email</a>
+                <a href="https://github.com/prakhardiwan" target="_blank" class="btn">GitHub</a>
+                <a href="https://linkedin.com/in/prakhardiwan" target="_blank" class="btn">LinkedIn</a>
+            </div>
         </div>
     </section>
 
